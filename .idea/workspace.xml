@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8c6b5c37-b691-4682-bcaf-362729605071" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/managers/DriverManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/pages/CreationTripPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/pages/MainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/pages/TripPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/properties/TestProps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/CreationTripPageSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/LoginPageSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/MainPageSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/TripPageSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/environment.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/webdriver/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HomeWork_2/ru/appline/ApplineTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/extension/DriverExtension.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2nnd8XmryFS8Qf0yaLYJzcb5QU5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/b0v/Desktop/IBS_AT_PAGE_OBJECT/src/main/resources/webdriver&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\b0v\Desktop\IBS_AT_PAGE_OBJECT\src\main\resources\webdriver" />
+      <recent name="C:\Users\b0v\Desktop\IBS_AT_PAGE_OBJECT\src\test\java" />
+      <recent name="C:\Users\b0v\Desktop\IBS_AT_PAGE_OBJECT\src\main\resources" />
+      <recent name="C:\Users\b0v\Desktop\IBS_AT_PAGE_OBJECT\src\test" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.ibs.appline.steps" />
+      <recent name="ru.ibs.appline.pages" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ApplineTest">
+    <configuration name="ApplineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IBS_AT_PAGE_OBJECT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HomeWork_2.ru.appline.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HomeWork_1.ru.appline" />
+      <option name="MAIN_CLASS_NAME" value="HomeWork_2.ru.appline.ApplineTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplineTest.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IBS_AT_PAGE_OBJECT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HomeWork_2.ru.appline.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HomeWork_1.ru.appline" />
+      <option name="MAIN_CLASS_NAME" value="HomeWork_2.ru.appline.ApplineTest" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplineTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IBS_AT_PAGE_OBJECT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HomeWork_2.ru.appline.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HomeWork_1.ru.appline" />
+      <option name="MAIN_CLASS_NAME" value="HomeWork_2.ru.appline.ApplineTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ApplineTest" />
+        <item itemvalue="JUnit.ApplineTest.test1" />
+        <item itemvalue="JUnit.ApplineTest.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c6b5c37-b691-4682-bcaf-362729605071" name="Changes" comment="" />
+      <created>1729612616056</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729612616056</updated>
+    </task>
+    <servers />
+  </component>
+</project>
