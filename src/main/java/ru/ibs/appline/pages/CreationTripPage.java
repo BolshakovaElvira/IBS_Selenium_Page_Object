@@ -15,6 +15,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class CreationTripPage extends BasePage {
+    JavascriptExecutor js = (JavascriptExecutor) driver;
     @FindBy(xpath = "//h1[contains(@class,'user-name')]")
     private WebElement pageTitle;
     @FindBy(xpath = "//div[contains(@class,'selector')]/span[text()='Выберите подразделение']/following-sibling::select")
@@ -106,7 +107,6 @@ public class CreationTripPage extends BasePage {
     }
 
     public void saveAndCloseBtnClick() {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", saveAndCloseBtn);
     }
 
