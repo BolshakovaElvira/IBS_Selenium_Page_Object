@@ -4,27 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c6b5c37-b691-4682-bcaf-362729605071" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/managers/DriverManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/pages/CreationTripPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/pages/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/pages/TripPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/properties/TestProps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/CreationTripPageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/LoginPageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/MainPageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/TripPageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/environment.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/webdriver/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/HomeWork_2/ru/appline/ApplineTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/extension/DriverExtension.java" afterDir="false" />
+    <list default="true" id="8c6b5c37-b691-4682-bcaf-362729605071" name="Changes" comment="hw_3 allure">
+      <change afterPath="$PROJECT_DIR$/src/test/java/extension/AllureExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/managers/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/managers/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/properties/TestProps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/managers/TestPropsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/CreationTripPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/CreationTripPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/LoginPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/LoginPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/MainPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/MainPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/TripPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/TripPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomeWork_2/ru/appline/ApplineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeWork_2/ru/appline/ApplineTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/extension/DriverExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/extension/DriverExtension.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +33,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2nnd8XmryFS8Qf0yaLYJzcb5QU5" />
@@ -48,12 +47,15 @@
     <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/b0v/Desktop/IBS_AT_PAGE_OBJECT/src/main/resources/webdriver&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/b0v/Desktop/IBS_AT_PAGE_OBJECT/src/main/resources/webdriver",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\b0v\Desktop\IBS_AT_PAGE_OBJECT\src\main\resources\webdriver" />
@@ -61,12 +63,22 @@
       <recent name="C:\Users\b0v\Desktop\IBS_AT_PAGE_OBJECT\src\main\resources" />
       <recent name="C:\Users\b0v\Desktop\IBS_AT_PAGE_OBJECT\src\test" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\b0v\Desktop\IBS_AT_PAGE_OBJECT\src\test\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ru.ibs.appline.steps" />
       <recent name="ru.ibs.appline.pages" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApplineTest">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean test" />
+      <command value="mvn clean install" />
+      <command value="mvn clean test allure:serve" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ApplineTest.test1">
     <configuration name="ApplineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IBS_AT_PAGE_OBJECT" />
       <extension name="coverage">
@@ -116,8 +128,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ApplineTest" />
         <item itemvalue="JUnit.ApplineTest.test1" />
+        <item itemvalue="JUnit.ApplineTest" />
         <item itemvalue="JUnit.ApplineTest.main" />
       </list>
     </recent_temporary>
@@ -131,6 +143,38 @@
       <option name="presentableId" value="Default" />
       <updated>1729612616056</updated>
     </task>
+    <task id="LOCAL-00001" summary="hw_2">
+      <created>1729790283690</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729790283690</updated>
+    </task>
+    <task id="LOCAL-00002" summary="hw_2 fix">
+      <created>1729792025112</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729792025112</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="hw_2" />
+    <MESSAGE value="hw_2 fix" />
+    <MESSAGE value="hw_3 allure" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw_3 allure" />
   </component>
 </project>

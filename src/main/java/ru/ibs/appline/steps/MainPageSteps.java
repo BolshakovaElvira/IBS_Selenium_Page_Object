@@ -1,19 +1,23 @@
 package ru.ibs.appline.steps;
 
-import ru.ibs.appline.pages.LoginPage;
+import io.qameta.allure.Step;
+
 import ru.ibs.appline.pages.MainPage;
-import ru.ibs.appline.pages.TripPage;
+
 
 public class MainPageSteps {
-    private MainPage mainPage;
+    private final MainPage mainPage;
     public MainPageSteps() {
         this.mainPage = new MainPage();
     }
+
+    @Step("Проверяем, что заголовок страницы {text}")
     public MainPageSteps checkTitle(String text){
         mainPage.checkTitle(text);
         return this;
     }
 
+    @Step("Переходим на страницу Командировки")
     public TripPageSteps filterByTrip(){
         mainPage.costClick();
         mainPage.tripClick();

@@ -1,14 +1,14 @@
-package ru.ibs.appline.properties;
+package ru.ibs.appline.managers;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-public class TestProps {
+public class TestPropsManager {
     private final Properties properties = new Properties();
-    private static TestProps instance = null;
+    private static TestPropsManager instance = null;
 
-    private TestProps(){
+    private TestPropsManager(){
         try{
             properties.load(new FileInputStream("src/main/resources/environment.properties"));
         }catch (IOException e){
@@ -16,9 +16,9 @@ public class TestProps {
         }
     }
 
-    public static TestProps getInstance(){
+    public static TestPropsManager getInstance(){
         if(instance==null){
-            instance=new TestProps();
+            instance=new TestPropsManager();
         }
         return instance;
     }

@@ -1,14 +1,16 @@
 package ru.ibs.appline.steps;
 
-import ru.ibs.appline.pages.LoginPage;
-import ru.ibs.appline.pages.MainPage;
+import io.qameta.allure.Step;
+
 import ru.ibs.appline.pages.TripPage;
 
 public class TripPageSteps {
-    private TripPage tripPage;
+    private final TripPage tripPage;
     public TripPageSteps() {
         this.tripPage = new TripPage();
     }
+
+    @Step("Нажимаем на кнопку Создать командировку")
     public CreationTripPageSteps createTripClick(){
         tripPage.createTripBtnClick();
         return new CreationTripPageSteps();

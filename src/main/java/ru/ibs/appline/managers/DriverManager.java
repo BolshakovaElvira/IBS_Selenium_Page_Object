@@ -5,11 +5,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import static ru.ibs.appline.properties.TestProps.getInstance;
+import static ru.ibs.appline.managers.TestPropsManager.getInstance;
 
 public class DriverManager {
     private static WebDriver driver;
-    private static Properties properties = getInstance().getProperties();
+    private static final Properties properties = getInstance().getProperties();
 
     public static WebDriver getWebDriver() {
         if (driver == null) {
