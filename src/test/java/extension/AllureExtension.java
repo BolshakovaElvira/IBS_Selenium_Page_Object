@@ -52,8 +52,8 @@ public class AllureExtension implements TestWatcher, AfterAllCallback {
     }
 
     @Attachment(value = "Screenshot", type = "image/png", fileExtension = ".png")
-    public static void takeScreenshot() {
+    public static byte[] takeScreenshot() {
 
-        ((TakesScreenshot) getWebDriver()).getScreenshotAs(OutputType.BYTES);
+        return ((TakesScreenshot) getWebDriver()).getScreenshotAs(OutputType.BYTES);
     }
 }

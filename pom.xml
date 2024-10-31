@@ -113,7 +113,7 @@
                 <artifactId>allure-maven</artifactId>
                 <version>${allure-maven.version}</version>
                 <configuration>
-                    <reportVersion>${allure-maven.version}</reportVersion>
+                    <reportVersion>${allure-junit.version}</reportVersion>
                     <resultsDirectory>${project.build.directory}/reports/allure-results</resultsDirectory>
                     <reportDirectory>${project.build.directory}/reports/allure-reports</reportDirectory>
                 </configuration>
