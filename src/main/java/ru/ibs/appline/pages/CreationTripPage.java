@@ -6,12 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import java.util.List;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class CreationTripPage extends BasePage {
@@ -54,7 +53,7 @@ public class CreationTripPage extends BasePage {
     @FindBy(xpath = "//button[contains(text(),'Сохранить и закрыть') and @type='submit']")
     private WebElement saveAndCloseBtn;
 
-    public void checkTitle(String text) {
+    public void checkCreationTripPageTitle(String text) {
         loading();
         wait.until(visibilityOf(pageTitle));
         assertThat("Проверка, что заголовок заполнен верно", pageTitle.getText(), equalTo(text));
@@ -123,7 +122,7 @@ public class CreationTripPage extends BasePage {
     public void checkTasksCheckBox(List<String> tasks) {
         for (String task : tasks) {
             String path = String.format("//label[contains(@for,'crm_business_trip_tasks') and text()='%s']/preceding-sibling::input", task);
-            assertTrue(driver.findElement(By.xpath(path)).isSelected(), "Чекбокс должен быть выбран.");
+            assertThat("Чекбокс должен быть выбран.",driver.findElement(By.xpath(path)).isSelected());
         }
     }
 

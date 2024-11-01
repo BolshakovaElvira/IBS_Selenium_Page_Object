@@ -1,18 +1,18 @@
 package ru.ibs.appline.steps;
 
-import io.qameta.allure.Step;
+import io.cucumber.java.ru.Допустим;
 
 import ru.ibs.appline.pages.TripPage;
 
 public class TripPageSteps {
     private final TripPage tripPage;
+
     public TripPageSteps() {
         this.tripPage = new TripPage();
     }
 
-    @Step("Нажимаем на кнопку Создать командировку")
-    public CreationTripPageSteps createTripClick(){
+    @Допустим("Нажать на кнопку Создать командировку")
+    public void нажатьНаКнопкуСоздатьКомандировку() {
         tripPage.createTripBtnClick();
-        return new CreationTripPageSteps();
     }
 }

@@ -1,8 +1,9 @@
 package ru.ibs.appline.steps;
 
-import io.qameta.allure.Step;
+import io.cucumber.java.ru.Допустим;
 import ru.ibs.appline.pages.CreationTripPage;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class CreationTripPageSteps {
@@ -13,104 +14,102 @@ public class CreationTripPageSteps {
         this.creationPage = new CreationTripPage();
     }
 
-    @Step("Проверяем, что заголовок страницы {text}")
-    public CreationTripPageSteps checkTitle(String text) {
-        creationPage.checkTitle(text);
-        return this;
+    @Допустим("Проверить, что текст заголовка страницы Создание командировки {string}")
+    public void проверить_текст_заголовка_страницы_создание_командировки(String text) {
+        creationPage.checkCreationTripPageTitle(text);
     }
 
-    @Step("Выбираем Подразделение: {subdivision}")
-    public CreationTripPageSteps selectSubdivision(String subdivision) {
+    @Допустим("Выбрать Подразделение: {string}")
+    public void выбрать_подразделение(String subdivision) {
         creationPage.enterSubdivision(subdivision);
-        return this;
     }
 
-    @Step("Выбираем Принимающую организацию: {hostOrganization}")
-    public CreationTripPageSteps selectHostOrganization(String hostOrganization) {
+    @Допустим("Выбрать Принимающую организацию: {string}")
+    public void выбрать_принимающую_организацию(String hostOrganization) {
         creationPage.enterHostOrganization(hostOrganization);
-        return this;
     }
 
-    @Step("Выбираем Задачу: {task}")
-    public CreationTripPageSteps selectTask(String task) {
+    @Допустим("Выбрать Задачу: {string}")
+    public void выбрать_задачу(String task) {
         creationPage.selectTaskInCheckBox(task);
-        return this;
+
     }
 
-    @Step("Выбираем Город Выбытия: {departureCity}")
-    public CreationTripPageSteps selectDepartureCity(String departureCity) {
+    @Допустим("Выбрать Город Выбытия: {string}")
+    public void выбрать_город_выбытия(String departureCity) {
         creationPage.enterDepartureCity(departureCity);
-        return this;
+
     }
 
-    @Step("Выбираем Город Прибытия: {arrivalCity}")
-    public CreationTripPageSteps selectArrivalCity(String arrivalCity) {
+    @Допустим("Выбрать Город Прибытия: {string}")
+    public void выбрать_город_прибытия(String arrivalCity) {
         creationPage.enterArrivalCity(arrivalCity);
-        return this;
+
     }
 
-    @Step("Выбираем Дату Выбытия: {departureDate}")
-    public CreationTripPageSteps selectDepartureDatePlan(String departureDate) {
+    @Допустим("Выбрать Дату Выбытия: {string}")
+    public void выбрать_дату_выбытия(String departureDate) {
         creationPage.enterDepartureDatePlan(departureDate);
-        return this;
+
     }
 
-    @Step("Выбираем Дату Прибытия: {returnDate}")
-    public CreationTripPageSteps selectReturnDatePlan(String returnDate) {
+    @Допустим("Выбрать Дату Прибытия: {string}")
+    public void выбрать_дату_прибытия(String returnDate) {
         creationPage.enterReturnDatePlan(returnDate);
-        return this;
+
     }
 
-    @Step("Нажимаем на кнопку 'Сохранить и закрыть'")
-    public CreationTripPageSteps saveAndCloseTripClick() {
+    @Допустим("Нажать на кнопку 'Сохранить и закрыть'")
+    public void нажать_на_кнопку_сохранить_и_закрыть() {
         creationPage.saveAndCloseBtnClick();
-        return this;
+
     }
 
-    @Step("Проверяем, что выбраны задачи: {tasks}")
-    public CreationTripPageSteps checkTasksInCheckBox(List<String> tasks) {
+    @Допустим("Проверить, что выбраны задачи: {string}")
+    public void проверить_что_выбраны_задачи(String tasksString) {
+        List<String> tasks = Arrays.asList(tasksString.split(","));
         creationPage.checkTasksCheckBox(tasks);
-        return this;
+
     }
 
-    @Step("Проверяем, что выбрано Подразделение: {subdivision}")
-    public CreationTripPageSteps checkSubdivision(String subdivision) {
+    @Допустим("Проверить, что выбрано Подразделение: {string}")
+    public void проверить_выбранное_подразделение(String subdivision) {
         creationPage.checkSubdivisionDropDown(subdivision);
-        return this;
+
     }
 
-    @Step("Проверяем, что выбрана Принимающая организация: {hostOrganization}")
-    public CreationTripPageSteps checkHostOrganization(String hostOrganization) {
+    @Допустим("Проверить, что выбрана Принимающая организация:{string}")
+    public void проверить_выбранную_принимающую_организацию(String hostOrganization) {
         creationPage.checkHostOrganization(hostOrganization);
-        return this;
+
     }
 
-    @Step("Проверяем, что выбран Город Выбытия: {departureCity}")
-    public CreationTripPageSteps checkDepartureCity(String departureCity) {
+    @Допустим("Проверить, что выбран Город Выбытия: {string}")
+    public void проверить_выбранный_город_выбытия(String departureCity) {
         creationPage.checkDepartureCity(departureCity);
-        return this;
+
     }
 
-    @Step("Проверяем, что выбран Город Прибытия: {arrivalCity}")
-    public CreationTripPageSteps checkArrivalCity(String arrivalCity) {
+    @Допустим("Проверить, что выбран Город Прибытия: {string}")
+    public void проверить_выбранный_город_прибытия(String arrivalCity) {
         creationPage.checkArrivalCity(arrivalCity);
-        return this;
+
     }
 
-    @Step("Проверяем, что выбрана Дата Выбытия: {departureDate}")
-    public CreationTripPageSteps checkDepartureDatePlan(String departureDate) {
+    @Допустим("Проверить, что выбрана Дата Выбытия: {string}")
+    public void проверить_выбранную_дату_выбытия(String departureDate) {
         creationPage.checkDepartureDatePlan(departureDate);
-        return this;
+
     }
 
-    @Step("Проверяем, что выбрана Дата Прибытия: {returnDate}")
-    public CreationTripPageSteps checkReturnDatePlan(String returnDate) {
+    @Допустим("Проверить, что выбрана Дата Прибытия: {string}")
+    public void проверить_выбранную_дату_прибытия(String returnDate) {
         creationPage.checkReturnDatePlan(returnDate);
-        return this;
+
     }
 
-    @Step("Проверяем, что появилось сообщение об ошибке на странице: {errorMessage}")
-    public void checkErrorMessage(String errorMessage) {
+    @Допустим("Проверить, что появилось сообщение об ошибке на странице: {string}")
+    public void проверить_сообщение_об_ошибке(String errorMessage) {
         creationPage.checkErrorMessage(errorMessage);
     }
 }

@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c6b5c37-b691-4682-bcaf-362729605071" name="Changes" comment="hw_3 allure">
+    <list default="true" id="8c6b5c37-b691-4682-bcaf-362729605071" name="Changes" comment="hw_3 fix">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/Hooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runner/CucumberRunnerTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/hw3.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/extension/AllureExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/extension/AllureExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/pages/CreationTripPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/pages/CreationTripPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/CreationTripPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/CreationTripPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/LoginPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/LoginPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/MainPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/MainPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/TripPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/steps/TripPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomeWork_2/ru/appline/ApplineTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/extension/AllureExtension.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/extension/DriverExtension.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="hw-allure" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,7 +53,8 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/b0v/Desktop/IBS_AT_PAGE_OBJECT/src/main/resources/webdriver&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -53,7 +65,9 @@
       <recent name="C:\Users\b0v\Desktop\IBS_AT_PAGE_OBJECT\src\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\b0v\Desktop\IBS_AT_PAGE_OBJECT\src\test\resources\features" />
       <recent name="C:\Users\b0v\Desktop\IBS_AT_PAGE_OBJECT\src\test\resources" />
+      <recent name="C:\Users\b0v\Desktop\IBS_AT_PAGE_OBJECT\src\test\java\runner" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ru.ibs.appline.steps" />
@@ -63,38 +77,61 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean test" />
-      <command value="mvn clean install" />
       <command value="mvn clean test allure:serve" />
+      <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ApplineTest.test1">
-    <configuration name="ApplineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CucumberRunnerTests">
+    <configuration name="Feature: hw3" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/hw3.feature" />
+      <option name="GLUE" value="ru.ibs.appline.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="IBS_AT_PAGE_OBJECT" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: hw3" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HomeWork_2.ru.appline.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HomeWork_1.ru.appline" />
-      <option name="MAIN_CLASS_NAME" value="HomeWork_2.ru.appline.ApplineTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplineTest.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Страхование путешественников и проверка ошибок при незаполненных полях" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/hw3.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="IBS_AT_PAGE_OBJECT" />
+      <option name="NAME_FILTER" value="^Страхование путешественников и проверка ошибок при незаполненных полях$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Страхование путешественников и проверка ошибок при незаполненных полях$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Страхование путешественников и проверка ошибок при незаполненных полях" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HomeWork_2.ru.appline.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HomeWork_1.ru.appline" />
-      <option name="MAIN_CLASS_NAME" value="HomeWork_2.ru.appline.ApplineTest" />
-      <option name="METHOD_NAME" value="main" />
-      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IBS_AT_PAGE_OBJECT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="extension.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="extension" />
+      <option name="MAIN_CLASS_NAME" value="extension.ApplineTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,23 +140,40 @@
       <module name="IBS_AT_PAGE_OBJECT" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HomeWork_2.ru.appline.*" />
+          <option name="PATTERN" value="extension.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HomeWork_1.ru.appline" />
-      <option name="MAIN_CLASS_NAME" value="HomeWork_2.ru.appline.ApplineTest" />
+      <option name="PACKAGE_NAME" value="extension" />
+      <option name="MAIN_CLASS_NAME" value="extension.ApplineTest" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CucumberRunnerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IBS_AT_PAGE_OBJECT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.CucumberRunnerTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CucumberRunnerTests" />
+        <item itemvalue="Cucumber Java.Feature: hw3" />
+        <item itemvalue="Cucumber Java.Scenario: Страхование путешественников и проверка ошибок при незаполненных полях" />
         <item itemvalue="JUnit.ApplineTest.test1" />
         <item itemvalue="JUnit.ApplineTest" />
-        <item itemvalue="JUnit.ApplineTest.main" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1730225464264</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hw_3 fix">
+      <created>1730393012139</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730393012139</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,6 +232,12 @@
     <MESSAGE value="hw_2" />
     <MESSAGE value="hw_2 fix" />
     <MESSAGE value="hw_3 allure" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw_3 allure" />
+    <MESSAGE value="hw_3 fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw_3 fix" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/IBS_AT_PAGE_OBJECT$CucumberRunnerTests.ic" NAME="CucumberRunnerTests Coverage Results" MODIFIED="1730479393642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>runner.*</FILTER>
+    </SUITE>
   </component>
 </project>

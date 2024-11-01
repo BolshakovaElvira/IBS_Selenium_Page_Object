@@ -20,7 +20,7 @@ public class MainPage extends BasePage {
     @FindBy(xpath = "//ul[contains(@class,'dropdown-menu')]/li/a/span[text()='Командировки']")
     private WebElement tripBtn;
 
-    public void checkTitle(String text){
+    public void checkMainPageTitle(String text){
         loading();
         wait.until(visibilityOf(pageTitle));
         assertThat("Проверка, что заголовок заполнен верно",pageTitle.getText(),equalTo(text));
